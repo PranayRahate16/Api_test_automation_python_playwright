@@ -1,0 +1,32 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# ---- Virtual environment ----
+.venv/
+venv/
+env/
+
+# ---- PyCharm / JetBrains ----
+.idea/
+
+# ---- Pytest / test artifacts ----
+.pytest_cache/
+reports/
+*.log
+
+# ---- Playwright ----
+test-results/
+playwright-report/
+playwright/.cache/
+
+# ---- OS-specific ----
+.DS_Store
+Thumbs.db
+
+# ---- Environment / secrets ----
+.env
+*.env.local
