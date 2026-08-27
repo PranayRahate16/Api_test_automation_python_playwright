@@ -1,12 +1,14 @@
 # testcases/test_smoke_flow.py
 import faker
+import pytest
+
 from api_clients.client_api import ClientAPI
 from api_clients.Create_Cart_api import CreateCartAPI
 from api_clients.product_api import ProductAPI
 
 fake = faker.Faker()
 
-
+@pytest.mark.smoke
 class TestSmokeFlow:
 
     def test_end_to_end_grocery_flow(self, api_request_context):

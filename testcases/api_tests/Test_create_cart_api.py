@@ -1,6 +1,8 @@
+import pytest
+
 from api_clients.Create_Cart_api import CreateCartAPI
 
-
+@pytest.mark.api
 class Test_CreateCartAPI:
 
     def test_create_cart(self,api_request_context, access_token):

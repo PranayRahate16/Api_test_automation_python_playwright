@@ -1,9 +1,11 @@
 from unittest import TestCase
 
+import pytest
 from playwright.async_api import expect
 
 from api_clients.product_api import ProductAPI
 
+@pytest.mark.api
 class TestProductAPI:
 
     def test_products(self,api_request_context):

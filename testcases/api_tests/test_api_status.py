@@ -1,7 +1,7 @@
 import pytest
 from api_clients.status_api import StatusAPI
 
-
+@pytest.mark.api
 class Test_API_Status:
     ENDPOINT='/status'
 

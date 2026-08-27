@@ -3,7 +3,7 @@ import pytest
 from api_clients.Create_Cart_api import CreateCartAPI
 from api_clients.client_api import ClientAPI
 from config import config
-from testcases.Test_api_client_authorization import fake
+from testcases.api_tests.Test_api_client_authorization import fake
 
 
 @pytest.fixture (scope='session')

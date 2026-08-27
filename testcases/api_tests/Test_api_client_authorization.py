@@ -1,9 +1,11 @@
 import faker
+import pytest
+
 from api_clients.client_api import ClientAPI
 
 fake = faker.Faker()
 
-
+@pytest.mark.api
 class TestClientAuthorization:
 
     def test_client_registration_returns_access_token(self, api_request_context):
