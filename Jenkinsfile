@@ -79,11 +79,17 @@ pipeline {
                 reportName: 'Pytest HTML Report'
             ])
 
-            archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
+            // Requires: Allure Jenkins plugin + an "allure" commandline tool
+            // configured under Manage Jenkins -> Tools -> Allure Commandline
+            allure includeProperties: false,
+                   jdk: '',
+                   results: [[path: 'allure-results']]
+
+            archiveArtifacts artifacts: 'reports/**, allure-results/**, allure-report/**', allowEmptyArchive: true
         }
 
         failure {
-            echo 'Build failed — check the Pytest HTML Report and console output for details.'
+            echo 'Build failed — check the Allure/Pytest HTML reports and console output for details.'
         }
 
         success {

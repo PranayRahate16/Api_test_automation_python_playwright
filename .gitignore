@@ -30,3 +30,7 @@ Thumbs.db
 # ---- Environment / secrets ----
 .env
 *.env.local
+
+# ---- Allure ----
+allure-results/
+allure-report/
