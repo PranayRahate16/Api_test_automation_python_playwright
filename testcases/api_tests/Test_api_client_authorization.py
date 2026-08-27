@@ -28,3 +28,5 @@ class TestClientAuthorization:
 
             access_token = response_data["accessToken"]
             print(f"Access token: {access_token}")
+
+            #EOD
