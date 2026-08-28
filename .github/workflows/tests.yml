@@ -17,6 +17,11 @@ on:
           - smoke
           - regression
 
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
